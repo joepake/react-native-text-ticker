@@ -215,7 +215,7 @@ export default class TextMarquee extends PureComponent {
         this.textWidth = textWidth
         this.distance = textWidth - containerWidth
 
-        if(this.unmounted){
+        if(!this.unmounted){
           this.setState({
             // Is 1 instead of 0 to get round rounding errors from:
             // https://github.com/facebook/react-native/commit/a534672
